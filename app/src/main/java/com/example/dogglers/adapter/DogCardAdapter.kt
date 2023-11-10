@@ -18,7 +18,10 @@ package com.example.dogglers.adapter
 import android.content.Context
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.dogglers.R
 import com.example.dogglers.data.DataSource
 
 /**
@@ -38,6 +41,10 @@ class DogCardAdapter(
      */
     class DogCardViewHolder(view: View?): RecyclerView.ViewHolder(view!!) {
         // TODO: Declare and initialize all of the list item UI components
+        val dogImageView: ImageView? = view!!.findViewById(R.id.dog_image)
+        val dogNameTextView: TextView? = view!!.findViewById(R.id.dog_name)
+        val dogAgeTextView: TextView? = view!!.findViewById(R.id.dog_age)
+        val dogHobbyTextView: TextView? = view!!.findViewById(R.id.dog_hobby)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DogCardViewHolder {
