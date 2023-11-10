@@ -61,7 +61,7 @@ class DogCardAdapter(
 
         // TODO: Null should not be passed into the view holder. This should be updated to reflect
         //  the inflated layout.
-        return DogCardViewHolder(null)
+        return DogCardViewHolder(adapterLayout)
     }
 
     override fun getItemCount(): Int = 0 // TODO: return the size of the data set instead of 0
